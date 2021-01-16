@@ -20,15 +20,15 @@ class CreateBiodatasTable extends Migration
             $table->string('jk');
             $table->date('tgl_lahir');
             $table->string('alamat'); //diisi kampung/dusun, rt, rw
-            $table->smallInteger('prov_id'); //dari database indonesia
-            $table->smallInteger('kab_id'); //dari database indonesia
-            $table->integer('kec_id'); //dari database indonesia
-            $table->bigInteger('desa_id'); //dari database indonesia
-            $table->smallInteger('kodepos_id'); //dari database indonesia
+            $table->string('prov'); //dari database indonesia
+            $table->string('kab'); //dari database indonesia
+            $table->integer('kec'); //dari database indonesia
+            $table->string('desa'); //dari database indonesia
+            $table->string('kodepos'); //dari database indonesia
             $table->bigInteger('nik');
-            $table->tinyInteger('agama_id'); //dari databsase indonesia
-            $table->integer('pekerjaan_id'); //dari database indonesia
-            $table->bigInteger('sekolah_id'); //diisi sekolah terakhir diambil dari database indonesia
+            $table->string('agama'); //dari databsase indonesia
+            $table->string('pekerjaan'); //dari database indonesia
+            $table->string('sekolah'); //diisi sekolah terakhir diambil dari database indonesia
             $table->string('foto');  //default gambar untuk laki2 dan perempuan
             $table->unsignedBigInteger('biodataable')->nullable();
             $table->string('biodatatype')->nullable();

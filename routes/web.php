@@ -16,5 +16,8 @@ use Illuminate\Support\Facades\DB;
 // $nilaiAwal = 1;
 // Route::get('/', 'BiodataController@index');
 Route::get('/', function () {
-  return DB::connection('mysql2')->select("select * from provinces");
+
+  // $data = DB::connection('mysql2')->select("select * from provinces");
+  $data = DB::connection('mysql2')->table('provinces')->paginate(5);
+  return response()->json($data);
 });
