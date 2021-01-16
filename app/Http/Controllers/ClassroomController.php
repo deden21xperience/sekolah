@@ -17,15 +17,17 @@ class ClassroomController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    // /**
+    //  * Show the form for creating a new resource.
+    //  *
+    //  * @return \Illuminate\Http\Response
+    //  */
+    // public function create()
+    // {
+    //     $dataClassroom = Classroom::all();
+
+    //     return $dataClassroom;
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -35,7 +37,9 @@ class ClassroomController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $classroom = $request->validate([
+            'nama' => 'required|string',
+        ]);
     }
 
     /**
