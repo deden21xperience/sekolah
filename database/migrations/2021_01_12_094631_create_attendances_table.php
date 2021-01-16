@@ -17,7 +17,7 @@ class CreateAttendancesTable extends Migration
             $table->id();
             $table->bigInteger('biodata_id');
             $table->time('jam_masuk');
-            // $table->time()
+            $table->time('jam_keluar');
             $table->timestamps();
         });
     }
