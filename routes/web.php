@@ -1,9 +1,7 @@
 <?php
 
-use Faker\Generator as Faker;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Database\Eloquent\Factory as Factory;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
