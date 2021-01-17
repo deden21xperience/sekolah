@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\DB;
 Route::get('/', function () {
 
   // $data = DB::connection('mysql2')->select("select * from provinces");
-  $data = DB::connection('mysql2')->table('provinces')->paginate(5);
-  return response()->json($data);
+  // $data = DB::connection('mysql2')->table('provinces')->paginate(5);
+  // return response()->json($data);
+  // $tes = DB::connection("mysql2")->ss
+  // return $tes;
+  return view('layouts.index');
 });
