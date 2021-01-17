@@ -12,9 +12,7 @@ use Illuminate\Support\Facades\DB;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// ** @var \Illuminate\Database\Eloquent\Factory $faker */
-// $nilaiAwal = 1;
-// Route::get('/', 'BiodataController@index');
+
 Route::get('/login', function () {
 
   // $data = DB::connection('mysql2')->select("select * from provinces");
