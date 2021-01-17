@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\DB;
 // ** @var \Illuminate\Database\Eloquent\Factory $faker */
 // $nilaiAwal = 1;
 // Route::get('/', 'BiodataController@index');
-Route::get('/', function () {
+Route::get('/login', function () {
 
   // $data = DB::connection('mysql2')->select("select * from provinces");
   // $data = DB::connection('mysql2')->table('provinces')->paginate(5);
@@ -23,4 +23,8 @@ Route::get('/', function () {
   // $tes = DB::connection("mysql2")->ss
   // return $tes;
   return view('layouts.index');
+});
+
+Route::get('/', function () {
+  return 'Hello world';
 });
