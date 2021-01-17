@@ -26,5 +26,9 @@ Route::get('/login', function () {
 });
 
 Route::get('/', function () {
-  return 'Hello world';
+  return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
